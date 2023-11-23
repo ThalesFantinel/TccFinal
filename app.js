@@ -289,7 +289,7 @@ app.get('/generatePDF/:id_animal/:user_id_user', async (req, res) => {
         const petInfo = await petController.getPetById3(id, user_id_user);
 
         // Gera o PDF e salva em uma pasta temporária
-        const pdfPath = 'caminho_temporario_pdf/animal_profile.pdf';
+        const pdfPath = 'caminho_temporario/animal_profile.pdf';
         const doc = new PDFDocument();
         const stream = fs.createWriteStream(pdfPath);
 
