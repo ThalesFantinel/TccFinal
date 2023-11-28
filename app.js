@@ -15,7 +15,7 @@ require('dotenv').config();
 const multer = require('multer');
 
 const app = express();
-const port = 5000;
+const port = 3000;
 
 app.use(express.json());
 
